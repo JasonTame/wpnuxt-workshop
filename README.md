@@ -13,7 +13,7 @@ Repo containing all the code and instructions for the technical workshop on buil
 
 #### Run the development server
 
-`npm install dev`
+`npm run dev`
 
 ## Getting post data
 
