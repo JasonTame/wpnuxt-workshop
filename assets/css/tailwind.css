@@ -66,3 +66,11 @@ a:focus {
 .post-content form {
     display: none;
 }
+
+.post-content figure {
+    margin: 0;
+}
+
+.post-content img {
+    max-width: 425px;
+}
