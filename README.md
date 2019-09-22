@@ -1,6 +1,8 @@
 # Getting started with headless WordPress and Nuxt
 Repo containing all the code and instructions for the technical workshop on building a PWA with headless WordPress and Nuxt.js
 
+Completed example - https://wcct19-nuxt-workshop.netlify.com/
+
 ## Installation instructions
 
 #### Clone this repo:
