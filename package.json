@@ -1,0 +1,21 @@
+{
+  "name": "wcct-workshop-app",
+  "version": "1.0.0",
+  "description": "A PWA built with Nuxt and headless WordPress",
+  "author": "Jason Tame",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.9.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0"
+  }
+}
