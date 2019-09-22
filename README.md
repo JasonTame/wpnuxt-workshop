@@ -1,5 +1,7 @@
 # Getting started with headless WordPress and Nuxt
-Repo containing all the code and instructions for the technical workshop on building a site with headless WordPress and NuxtJS
+Repo containing all the code and instructions for the technical workshop on building a PWA with headless WordPress and Nuxt.js
+
+Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
 ## Installation instructions
 
@@ -90,6 +92,13 @@ Repo containing all the code and instructions for the technical workshop on buil
     },
   }
   ```
+
+  The nightmode toggle should now work :) 
+
+  ![Night mode toggle](https://i.imgur.com/jg1tleR.gif)
+
+ 
+
 </details>
 
 <details>
