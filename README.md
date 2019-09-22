@@ -18,45 +18,43 @@ Repo containing all the code and instructions for the technical workshop on buil
 ## Getting post data
 
 <details>
-  <summary>Step 1: Get list of posts from WP Rest API</summary>
+  <summary>Step 1: Set up config.js</summary>
   
   #### Add details
 </details>
 
 <details>
-  <summary>Step 2: Render the post links</summary>
+  <summary>Step 2: Set up Vuex store</summary>
   
   #### Add details
 </details>
 
 <details>
-  <summary>Step 3: Get data for an individual post</summary>
-  
-  #### Add details
-</details>
-
-## Getting global data
-
-<details>
-  <summary>Step 1: Set up Vuex</summary>
+  <summary>Step 3: Display links to recent blog posts</summary>
   
   #### Add details
 </details>
 
 <details>
-  <summary>Step 2: Get global data from WP Rest API</summary>
+  <summary>Step 4: Display most recent post on home page</summary>
   
   #### Add details
 </details>
 
 <details>
-  <summary>Step 3: Save the global data to Vuex</summary>
+  <summary>Step 5: Display all post links</summary>
   
   #### Add details
 </details>
 
 <details>
-  <summary>Step 4: Render the global data in the template</summary>
+  <summary>Step 6: Display all post content</summary>
+  
+  #### Add details
+</details>
+
+<details>
+  <summary>Step 7: Run app in production mod</summary>
   
   #### Add details
 </details>
