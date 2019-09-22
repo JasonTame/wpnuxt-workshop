@@ -109,11 +109,9 @@ Repo containing all the code and instructions for the technical workshop on buil
   
   ``` javascript
   
-  <div class="w-full md:w-1/2 order-1 md:order-2">
-    <div class="max-w-md leading-loose tracking-tight">
-      <h1 class="font-bold my-12">{{latestPost.title.rendered}}</h1>
-      <div class="post-content" v-html="latestPost.content.rendered"></div>
-    </div>
+  <div class="max-w-md leading-loose tracking-tight">
+    <h1 class="font-bold my-12">{{latestPost.title.rendered}}</h1>
+    <div class="post-content" v-html="latestPost.content.rendered"></div>
   </div>
   
   computed: {
