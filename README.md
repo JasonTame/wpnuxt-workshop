@@ -81,6 +81,13 @@ Repo containing all the code and instructions for the technical workshop on buil
     },
   }
   ```
+
+  The nightmode toggle should now work :) 
+
+  ![Night mode toggle](https://i.imgur.com/jg1tleR.gif)
+
+ 
+
 </details>
 
 <details>
