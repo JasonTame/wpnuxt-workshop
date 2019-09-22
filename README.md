@@ -20,9 +20,11 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 ## Getting post data
 
 <details>
-  <summary>Step 1: Set up config.js</summary>
+  <summary><b>Step 1: Set up config.js</b></summary>
   
+  <p></p>
   In assets/config.js, add the following code:
+  <p></p>
 
   ```javascript
   
@@ -47,19 +49,18 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
   }
   
   ```
+  <p>The first 6 options will automatically populate a manifest.json file. </p>
 
-  The first 6 options will automatically populate a manifest.json file. 
-  
-  The Rest API endpoints will be used to fetch data from the WordPress site. 
+  <p>The Rest API endpoints will be used to fetch data from the WordPress site.</p>
   
 </details>
 
 <details>
-  <summary>Step 2: Set up Vuex store</summary>
+  <summary><b>Step 2: Set up Vuex store</b></summary>
+  <p></p>
+  <p>Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion. (https://vuex.vuejs.org)</p>
 
-  Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion. (https://vuex.vuejs.org)
-
-  To set up a simple Vuex store in your Nuxt.js project, add the following code to store/index.js
+  <p>To set up a simple Vuex store in your Nuxt.js project, add the following code to store/index.js</p>
   
   ``` javascript
   import Config from '~/assets/config'
@@ -93,17 +94,16 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
   }
   ```
 
-  The nightmode toggle should now work :) 
+  <p>The nightmode toggle should now work :)</p> 
 
   ![Night mode toggle](https://i.imgur.com/jg1tleR.gif)
 
- 
 
 </details>
 
 <details>
-  <summary>Step 3: Display links to recent blog posts</summary>
-  
+  <summary><b>Step 3: Display links to recent blog posts</b></summary>
+  <p></p>
   Add the code below to pages/index.vue. Look for the comment titled 'Recent post links' and paste the first snippet there. 
   
   'latestPostLinks' is a computed property, and thus needs to go in the object titled 'computed' which you can find near the bottom of the page.
@@ -132,8 +132,8 @@ If all went well, you should now see a list of recent posts which have been pull
 </details>
 
 <details>
-  <summary>Step 4: Display most recent post on home page</summary>
-  
+  <summary><b>Step 4: Display most recent post on home page</b></summary>
+  <p></p>
   The next step is to get some post content rendered on the screen. Add the div below the 'Most recent post' comment.
 
   The 'latestPost' computed property needs to go right below the 'latestPostLinks' property you added in the last step. 
@@ -154,13 +154,14 @@ If all went well, you should now see a list of recent posts which have been pull
   ```
 
   You should now see the content for the most recently published blog post appear. Well done! :) 
+  
  ![Most recent blog post](https://i.imgur.com/dqNBGbq.png)
 
 </details>
 
 <details>
-  <summary>Step 5: Display all post links</summary>
-
+  <summary><b>Step 5: Display all post links</b></summary>
+  <p></p>
   If you click on any recent post link, you will be greeted with a nearly blank screen. This is because we are now loading pages/post/_id.vue which is a dynamic page that is meant to render single blog posts. Let's add some data to this page.
 
   The full list of blog post links is rendered by a component titled 'PostLinks' which can be found at components/PostLinks.vue. Add the code below to this file. 
@@ -195,8 +196,8 @@ If all went well, you should now see a list of recent posts which have been pull
 </details>
 
 <details>
-  <summary>Step 6: Display all post content</summary>
-
+  <summary><b>Step 6: Display all post content</b></summary>
+  <p></p>
   To render the content of any blog post, add the following code to components/PostContent.vue:
   
   ``` javascript
@@ -238,8 +239,8 @@ If all went well, you should now see a list of recent posts which have been pull
 </details>
 
 <details>
-  <summary>Step 7: Run app in production mode</summary>
-
+  <summary><b>Step 7: Run app in production mode</b></summary>
+  <p></p>
   To enable offline access and other PWA features, you need to run the app in production mode. To do so, terminate the current process which is running the dev server, and then run the following two commands:
   
   #### Build the app
