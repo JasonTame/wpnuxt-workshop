@@ -102,151 +102,22 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 </details>
 
 <details>
-  <summary><b>Step 3: Display links to recent blog posts</b></summary>
-  <p></p>
-  Add the code below to pages/index.vue. Look for the comment titled 'Recent post links' and paste the first snippet there. 
-  
-  'latestPostLinks' is a computed property, and thus needs to go in the object titled 'computed' which you can find near the bottom of the page.
-
-  ``` javascript
-  
-  <ul class="flex flex-wrap justify-between flex-col">
-    <li :key="post.id" v-for="post in latestPostLinks">
-      <nuxt-link :to="`/posts/${post.id}`" v-html="post.title.rendered"></nuxt-link>
-    </li>
-  </ul>
-  <nuxt-link to="/posts/" class="normal font-bold hover:font-bold">more...</nuxt-link>
-  
-  computed: {
-    latestPostLinks() {
-      return this.$store.state.posts.filter((post, idx) => idx < 3);
-    },
-  }
- 
-  ```
-
-If all went well, you should now see a list of recent posts which have been pulled through from https://2019.capetown.wordcamp.org.
-
-![Latest Post Links](https://i.imgur.com/GJUu4sj.png)
+  <summary><b>Step 3: Display links to posts</b></summary>
 
 </details>
 
 <details>
-  <summary><b>Step 4: Display most recent post on home page</b></summary>
-  <p></p>
-  The next step is to get some post content rendered on the screen. Add the div below the 'Most recent post' comment.
-
-  The 'latestPost' computed property needs to go right below the 'latestPostLinks' property you added in the last step. 
-
-  ``` javascript
+  <summary><b>Step 4: Display post content</b></summary>
   
-  <div class="max-w-md leading-loose tracking-tight">
-    <h1 class="font-bold my-12">{{latestPost.title.rendered}}</h1>
-    <div class="post-content" v-html="latestPost.content.rendered"></div>
-  </div>
-  
-  computed: {
-    latestPost() {
-      return this.$store.state.posts[0];
-    }
-  }
- 
-  ```
-
-  You should now see the content for the most recently published blog post appear. Well done! :) 
-  
- ![Most recent blog post](https://i.imgur.com/dqNBGbq.png)
 
 </details>
 
-<details>
-  <summary><b>Step 5: Display all post links</b></summary>
-  <p></p>
-  If you click on any recent post link, you will be greeted with a nearly blank screen. This is because we are now loading pages/post/_id.vue which is a dynamic page that is meant to render single blog posts. Let's add some data to this page.
+## Run app in production mode
 
-  The full list of blog post links is rendered by a component titled 'PostLinks' which can be found at components/PostLinks.vue. Add the code below to this file. 
-
-  
-  ``` javascript
-  <template>
-    <div>
-      <ul class="flex flex-wrap justify-between flex-col">
-        <li :key="post.id" v-for="post in posts">
-          <nuxt-link :to="`/posts/${post.id}`" v-html="post.title.rendered"></nuxt-link>
-        </li>
-      </ul>
-    </div>
-  </template>
-
-  <script>
-    export default {
-      computed: {
-        posts() {
-          return this.$store.state.posts;
-        }
-      }
-    };
-  </script>
-  ```
-
-  If you click on any recent post link, you should now see all the blog post links appear.
-
-  ![All blog post links](https://i.imgur.com/LZIROuG.png)
-
-</details>
-
-<details>
-  <summary><b>Step 6: Display all post content</b></summary>
-  <p></p>
-  To render the content of any blog post, add the following code to components/PostContent.vue:
-  
-  ``` javascript
-   <template>
-    <div class="max-w-md leading-loose tracking-tight">
-      <h1 class="font-bold my-12" v-html="currentPost.title.rendered"></h1>
-      <div class="post-content" v-html="currentPost.content.rendered"></div>
-    </div>
-  </template>
-
-  <script>
-    export default {
-      head() {
-        return {
-          title: this.currentPost.title.rendered
-        };
-      },
-      computed: {
-        currentPost() {
-          let postID = this.$route.params.id
-            ? this.$route.params.id
-            : this.$store.state.posts[0].id;
-
-          let currentPost = this.$store.state.posts.find(post => post.id == postID);
-
-          this.$store.commit("setCurrentPost", currentPost);
-          return currentPost;
-        }
-      }
-    };
-  </script>
-
-  ```
-
-  You can now click on any link and the post content will be displayed
-
-  ![All blog posts](https://i.imgur.com/WmTCVWT.png)
-    
-</details>
-
-<details>
-  <summary><b>Step 7: Run app in production mode</b></summary>
-  <p></p>
-  To enable offline access and other PWA features, you need to run the app in production mode. To do so, terminate the current process which is running the dev server, and then run the following two commands:
+To enable offline access and other PWA features, you need to run the app in production mode. To do so, terminate the current process which is running the dev server, and then run the following two commands:
   
   #### Build the app
   `npm run build`
 
   #### Start the production server
   `npm run start`
-  
-</details>
