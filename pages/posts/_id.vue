@@ -6,15 +6,17 @@
           class="max-w-md md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0"
         >
           <p class="font-bold my-4 md:my-12">Posts</p>
-          <post-links />
+          <!-- All post links -->
         </div>
       </div>
       <div class="w-full md:w-1/2 order-1 md:order-2">
         <div class="max-w-md leading-loose tracking-tight">
-          <post-content />
+          <!-- Post content -->
         </div>
       </div>
     </div>
+
+    <home-link />
 
     <night-mode-toggle />
   </div>
@@ -24,12 +26,14 @@
 import axios from "axios";
 import Config from "~/assets/config";
 
+import HomeLink from "@/components/HomeLink";
 import PostLinks from "@/components/PostLinks";
 import PostContent from "@/components/PostContent";
 import NightModeToggle from "@/components/NightModeToggle";
 
 export default {
   components: {
+    HomeLink,
     PostLinks,
     PostContent,
     NightModeToggle

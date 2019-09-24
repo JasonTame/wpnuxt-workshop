@@ -11,7 +11,7 @@
       </div>
 
       <div class="w-full md:w-1/2 order-1 md:order-2">
-        <!-- Most recent post -->
+        <!-- Post content -->
       </div>
 
       <div class="w-full md:w-1/2 md:pr-32 pt-12 md:pt-0 md:sticky md:bottom-0 order-4 md:order-3">
@@ -22,6 +22,7 @@
         </div>
       </div>
 
+      <home-link />
       <night-mode-toggle />
 
       <div class="w-full md:w-1/2 order-2 md:order-4">
@@ -35,6 +36,7 @@
 import axios from "axios";
 import Config from "~/assets/config";
 
+import HomeLink from "@/components/HomeLink";
 import PostLinks from "@/components/PostLinks";
 import PostContent from "@/components/PostContent";
 import SocialLinks from "@/components/SocialLinks";
@@ -48,13 +50,13 @@ export default {
     };
   },
   components: {
+    HomeLink,
     PostLinks,
     PostContent,
     SocialLinks,
     NightModeToggle,
     AboutWordCamp
-  },
-  computed: {}
+  }
 };
 </script>
 
