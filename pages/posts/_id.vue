@@ -7,6 +7,7 @@
         >
           <p class="font-bold my-4 md:my-12">Posts</p>
           <!-- All post links -->
+          <post-links :posts="this.$store.state.posts" />
         </div>
       </div>
       <div class="w-full md:w-1/2 order-1 md:order-2">

@@ -7,6 +7,8 @@
         >
           <p class="font-bold my-4 md:mt-12 md:mb-4">Recent Posts</p>
           <!-- Recent post links -->
+          <post-links :posts="latestPostLinks" />
+          <nuxt-link to="/posts/" class="normal font-bold hover:font-bold">more...</nuxt-link>
         </div>
       </div>
 
@@ -56,6 +58,11 @@ export default {
     SocialLinks,
     NightModeToggle,
     AboutWordCamp
+  },
+  computed: {
+    latestPostLinks() {
+      return this.$store.state.posts.filter((post, idx) => idx < 3);
+    }
   }
 };
 </script>
