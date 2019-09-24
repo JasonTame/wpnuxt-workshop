@@ -13,6 +13,7 @@
       <div class="w-full md:w-1/2 order-1 md:order-2">
         <div class="max-w-md leading-loose tracking-tight">
           <!-- Post content -->
+          <post-content />
         </div>
       </div>
     </div>

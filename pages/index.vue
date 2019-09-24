@@ -14,6 +14,7 @@
 
       <div class="w-full md:w-1/2 order-1 md:order-2">
         <!-- Post content -->
+        <post-content />
       </div>
 
       <div class="w-full md:w-1/2 md:pr-32 pt-12 md:pt-0 md:sticky md:bottom-0 order-4 md:order-3">
