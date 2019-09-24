@@ -111,7 +111,7 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
   The code which renders the links should be added to a component called PostLinks. This component can be found in components/PostLinks.vue.
 
-  This component includes an unordered list of links. It has a single prop called 'posts' which we can pass our posts to in order to dsiplay the links. 
+  This component includes an unordered list of links. It has a single prop called 'posts' which we can pass our posts to in order to display the links. 
 
   Add the code below to PostLinks.vue
 
