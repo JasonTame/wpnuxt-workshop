@@ -162,7 +162,7 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
   ![Recent post links](https://i.imgur.com/GJUu4sj.png)
 
-  ##### Add all post links to post page
+  #### Add all post links to post page
 
   The post page can be found at pages/posts/_id.vue. This is a dynamic page which is used to render any blog post. 
 
