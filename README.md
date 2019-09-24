@@ -9,6 +9,10 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
 `git clone https://github.com/JasonTame/wpnuxt-workshop.git`
 
+#### Open the folder in your terminal
+
+`cd wpnuxt-workshop`
+
 #### Install dependencies
 
 `npm install`
