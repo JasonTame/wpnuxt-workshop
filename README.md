@@ -117,7 +117,7 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
   ``` javascript
   
-    <template>
+  <template>
     <div>
       <ul class="flex flex-wrap justify-between flex-col">
         <li :key="post.id" v-for="post in posts">
