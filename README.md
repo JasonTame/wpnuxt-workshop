@@ -231,6 +231,10 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
   ``` javascript
     <post-content />
   ```
+  
+ Post content should now be displayed correctly on both the home and post pages:
+ 
+ ![Post content](https://i.imgur.com/WmTCVWT.png)
 
 </details>
 
