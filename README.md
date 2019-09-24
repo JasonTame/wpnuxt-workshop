@@ -21,7 +21,7 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
 `npm run dev`
 
-## Getting post data
+## Getting and displaying post data
 
 <details>
   <summary><b>Step 1: Set up config.js</b></summary>
