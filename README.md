@@ -17,13 +17,13 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
 #### Install dependencies
 
-`npm install`
-
-#### Run the development server
-
 [NPM installation guide for Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
 
 [NPM installation guide for Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
+
+`npm install`
+
+#### Run the development server
 
 `npm run dev`
 
