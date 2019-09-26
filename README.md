@@ -7,6 +7,8 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 
 #### Clone this repo:
 
+[Git installation guide](https://www.atlassian.com/git/tutorials/install-git)
+
 `git clone https://github.com/JasonTame/wpnuxt-workshop.git`
 
 #### Open the folder in your terminal
@@ -18,6 +20,10 @@ Completed example - https://wcct19-nuxt-workshop.netlify.com/
 `npm install`
 
 #### Run the development server
+
+[NPM installation guide for Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+
+[NPM installation guide for Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 
 `npm run dev`
 
